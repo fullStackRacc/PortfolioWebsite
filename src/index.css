@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@400;500;700&display=swap');
 
-#light {
+:root {
   --font-base: 'Arima', cursive;
 
   --primary-color: #edf2f8;
@@ -12,17 +12,17 @@
   --white-color: #ffffff;
 }
 
-#dark {
+/* :root {
   --font-base: 'Arima', cursive;
 
   --primary-color: #121212;
   --secondary-color: #e45598;
-  --black-color: #030303;
-  --lightGray-color: #e4e4e4;
-  --gray-color: #6b7688;
+  --black-color: #e7e7e7;
+  --lightGray-color: #645e5e;
+  --gray-color: #27292c;
   --brown-color: #46364a;
-  --white-color: #ffffff;
-}
+  --white-color: #000000;
+} */
 
 
 * {
