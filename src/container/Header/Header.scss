@@ -1,9 +1,8 @@
+@import '../../constants/lib';
+
 #home {
     position: relative;
-    background: url(../../assets/bgIMG.png);
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center;
+    background: $bulma-black;
 
     .app__wrapper {
         padding: 0;
@@ -57,11 +56,12 @@
 
     .badge-cmp, .tag-cmp {
         padding: 1rem 2rem;
-        border: var(--white-color);
+        border: $black;
         border-radius: 15px;
         flex-direction: row;
         width: auto;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        box-shadow: $shadow-3;
+        background: $raised;
     }
 
     .tag-cmp {
@@ -77,6 +77,7 @@
 
     span {
         font-size: 2.5rem;
+        color: $white;
         
         @media screen and (min-width: 2000px) {
             font-size: 5rem;
@@ -104,8 +105,8 @@
         height: 100px;
         border-radius: 50%;
 
-        background: var(--white-color);
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background: $raised;
+        box-shadow: $shadow-4;
 
         img{
             width: 60%;
@@ -168,17 +169,19 @@
 
     img {
         width: 75%;
-        object-fit: contain;
         z-index: 1;
         border-radius: 50%;
         margin-bottom: 15rem;
+        position: relative;
+        left: -5rem;
+        bottom: -4.5rem;
     }
 
     .overlay-circle {
         position: absolute;
-        left: 0;
+        left: -3rem;
         right: 0;
-        bottom: 0;
+        bottom: -8rem;
         z-index: 0;
         width: 100%;
         height: 90%;

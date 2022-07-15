@@ -1,14 +1,16 @@
+@import './constants/lib';
+
 .app {
-    background-color: var(--primary-color);
+    background-color: $bulma-black;
     font-family: var(--font-base);
   }
   
   .app__whitebg {
-    background-color: var(--white-color);
+    background-color: $material-black;
   }
   
   .app__primarybg {
-    background-color: var(--primary-color);
+    background-color: $bulma-black;
   }
   
   .app__container {
@@ -47,7 +49,7 @@
   
     p {
       text-transform: uppercase;
-      color: var(--black-color);
+      color: $white;
     }
   }
   
@@ -55,11 +57,11 @@
     font-size: 2.75rem;
     font-weight: 800;
     text-align: center;
-    color: var(--black-color);
+    color: $white;
     text-transform: capitalize;
   
     span {
-      color: var(--secondary-color);
+      color: $amethyst;
     }
   
     @media screen and (min-width: 2000px) {
@@ -74,7 +76,7 @@
   .p-text {
     font-size: 0.8rem;
     text-align: left;
-    color: var(--gray-color);
+    color: $white;
     line-height: 1.5;
   
     @media screen and (min-width: 2000px) {
@@ -85,7 +87,7 @@
   .bold-text {
     font-size: 1rem;
     font-weight: 800;
-    color: var(--black-color);
+    color: $white;
     text-align: left;
   
     @media screen and (min-width: 2000px) {
@@ -109,9 +111,9 @@
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      background-color: var(--white-color);
+      background-color: $bulma-black;
       margin: 0.25rem 0;
-      border: 1px solid var(--lightGray-color);
+      border: 1px solid $material-black;
   
       display: flex;
       justify-content: center;
@@ -122,15 +124,15 @@
       svg {
         width: 15px;
         height: 15px;
-        color: var(--gray-color);
+        color: $clouds;
       }
   
       &:hover {
-        background-color: var(--secondary-color);
-        border-color: var(--secondary-color);
+        background-color: $amethyst;
+        border-color: $amethyst;
   
         svg {
-          color: var(--white-color);
+          color: $white;
         }
       }
   
@@ -160,13 +162,13 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background-color: #cbcbcb;
+      background-color: $concrete;
       margin: 0.5rem;
   
-      transition: background-color 0.2s ease-in-out;
+      transition: $clouds 0.2s ease-in-out;
   
       &:hover {
-        background-color: var(--secondary-color);
+        background-color: $amethyst;
       }
   
       @media screen and (min-width: 2000px) {

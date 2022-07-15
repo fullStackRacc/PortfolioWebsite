@@ -1,3 +1,5 @@
+@import '../../constants/lib';
+
 .app__footer {
     flex: 1;
     width: 100%;
@@ -23,7 +25,7 @@
         padding: 1rem;
         border-radius: 10px;
         cursor: pointer;
-        background-color: #fef4f5;
+        background-color: $raised2;
 
         transition: all 0.3s ease-in-out;
 
@@ -43,7 +45,7 @@
         }
 
         &:hover {
-            box-shadow: 0 0 25px #fef4f5;
+            box-shadow: $shadow-5;
         }
 
         @media screen and (max-width: 450px) {
@@ -57,7 +59,7 @@
 }
 
 .app__footer-cards .app__footer-card:last-child {
-    background-color: #f2f7fb;
+    background-color: $raised;
 }
 
 .app__footer-form {
@@ -71,7 +73,7 @@
         border-radius: 10px;
         cursor: pointer;
 
-        background-color: var(--primary-color);
+        background-color: $material-black;
 
         transition: all 0.3s ease-in-out;
 
@@ -80,19 +82,16 @@
             padding: 0.95rem;
             border: none;
             border-radius: 7px;
-            background-color: var(--primary-color);
+            background-color: $raised;
+            margin: 1rem 0 0 0;
 
             font-family: var(--font-base);
-            color: var(--secondary-color);
+            color: $amethyst;
             outline: none;
         }
 
         textarea {
             height: 170px;
-        }
-
-        &:hover {
-            box-shadow: var(--primary-color);
         }
     }
 
@@ -100,10 +99,10 @@
         padding: 1rem 2rem;
         border-radius: 10px;
         border: none;
-        background-color: var(--secondary-color);
+        background-color: $amethyst;
 
         font-weight: 500;
-        color: var(--white-color);
+        color: $white;
         outline: none;
         margin: 2rem 0 0 0;
         font-family: var(--font-base);
