@@ -33,12 +33,12 @@ const Skills = () => {
 
       <div className='app__skills-container'>
         <motion.div className='app__skills-list'>
-          {skills?.map((skill) => (
+          {skills?.map((skill, i) => (
             <motion.div
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               className='app__skills-item app-flex'
-              key={skill.name}
+              key={skill.name + i}
             >
               <div className='app__flex' >
                 <img src={urlFor(skill.icon)} alt={skill.name} />
@@ -49,26 +49,26 @@ const Skills = () => {
         </motion.div>
 
         <motion.div className='app__skills-exp'>
-            {experience?.map((experience) => (
+            {experience?.map((experience, i) => (
               <motion.div
                 className='app__skills-exp-item'
                 key={experience.year}
               >
-                <div className='app__skills-exp-year'>
+                <div className='app__skills-exp-year' key={experience.year}>
                 <p className='bold-text'>{experience.year}</p>
                 </div>
                 <motion.div
                   className='app__skills-exp-works'
+                  key={experience.year + i}
                 >
-                  {experience.works.map((work) => (
-                  <>
+                  {experience.works.map((work, i) => (
+                  <div key={work.name + i}>
                     <motion.div
                       whileInView={{ opacity: [0, 1] }}
                       transition={{ duration: 0.5 }}
                       className='app__skills-exp-work'
                       data-tip
                       data-for={work.name}
-                      key={work.name}
                     >
                       <h4 className='bold-text'>{work.name}</h4>
                       <p className='p-text'>{work.company}</p>
@@ -81,7 +81,7 @@ const Skills = () => {
                     >
                       {work.desc}
                     </ReactTooltip>
-                  </>
+                  </div>
                   ))}
                 </motion.div>
 
